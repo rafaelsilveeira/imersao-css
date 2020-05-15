@@ -80,6 +80,11 @@ a {
   text-decoration: none;
 }
 
+.titulo{
+  margin-top: calc(1em + 0.7em + 20px);
+
+}
+
 .site-subtitle,
 .site-title {
   color: whitesmoke;
