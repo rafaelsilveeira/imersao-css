@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Rafael S. da Rosa</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Permanent+Marker&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/30fe2c1c74.js" crossorigin="anonymous"></script>
+  <title>Rafael S. da Rosa</title>
 </head>
-<body>
-    <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-        <h1 class="site-title">Rafael Silveira da Rosa</h1>
-        <h2 class="site-subtitle">jr. frontend developer</h2>
-      </header>
+
+<body id="corpo">
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="#corpo"><i class="fas fa-home"></i></a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="titulo">
+      <h1 class="site-title typing-animation">Rafael Silveira da Rosa</h1>
+      <h2 class="site-subtitle">beginner frontend developer</h2>
+    </div>  
+  </header>
+
+  <section class="portfolio" id="portfolio">
+    <h2>Projetos</h2>
+    
+    <div class="grid">
+      <figure>
+        <figcaption>Calculadora de IMC</figcaption>
+        <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/Calculo_de_IMC/index.html" target="blank">
+          <img class="img-portfolio" src="./img/calc_imc.PNG" alt="Calculadora de IMC">
+        </a>
+      </figure>
+      <figure>
+        <figcaption>Tabuada</figcaption>
+        <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/tabuada/index.html" target="blank">
+          <img class="img-portfolio" src="./img/tabuada.PNG" alt="Gerador de tabuada">
+        </a>
+      </figure>
+      <figure>
+        <figcaption>Botões de Like</figcaption>
+        <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/Alura-Botao_de_likes/index.html" target="blank">
+          <img class="img-portfolio" src="./img/botao_like.PNG" alt="Botões de like">
+        </a>
+      </figure>
+      <figure>
+        <figcaption>Sorteador de número</figcaption>
+        <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/App_Sorteio/index.html" target="blank">
+          <img class="img-portfolio" src="./img/sorteador.PNG" alt="Sorteador de números">
+        </a>
+      </figure>
+      <figure>
+        <figcaption>Calculadora de tarifa</figcaption>
+        <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/App_calculo_de_tarifa/index.html" target="blank">
+          <img class="img-portfolio" src="./img/tarifa_app.PNG" alt="Calculadora de tarifa - app de mobilidade">
+        </a>
+      </figure>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <h2>Contato</h2>
+    
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/rafaelsilveeira">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+      <a target="_blank" href="https://twitter.com/RafaelSilveeira">
+        <i class="fab fa-twitter-square"></i>
+        Twitter
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/rafaelsilveiradarosa/">
+        <i class="fab fa-linkedin"></i>
+        LinkedIn
+      </a>
+      <a href="mailto:rafael_sr30@hotmail.com">
+        <i class="fas fa-envelope-square"></i>
+        Email
+      </a>
+    </div>
+  </section>
+
 </body>
+
 </html>

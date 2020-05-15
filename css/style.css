@@ -1,38 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-image: url('https://i.pinimg.com/236x/b7/c9/ca/b7c9cae0210b5783b5c7ad556d373402.jpg');
-    background-size: auto 100vp;
-    color: limegreen;
-    font-family: Arial;
-    height: 100vh;
+  background-image: url('https://i.pinimg.com/236x/b7/c9/ca/b7c9cae0210b5783b5c7ad556d373402.jpg');
+  background-size: auto 100vp;
+  color: limegreen;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 10px;
+  height: 100vh;
+}
+
+/*Se a tela for de, pelo menos, 400px*/
+@media (min-width: 400px) {
+  body{
+    font-size: 15px;
   }
-  
-  .menu{
-    background-color: white;
+}
+/*Se a tela for de, pelo menos, 600px*/
+@media (min-width: 600px) {
+  body{
+    font-size: 20px;
   }
-  .menu li{
-    list-style: none;
+}
+/*Se a tela for de, pelo menos, 1000px*/
+@media (min-width: 1000px) {
+  body{
+    font-size: 25px;
   }
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
+}
+
+/*CABEÇALHO*/
+header{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*MENU*/
+.menu{
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  position: fixed;
+  padding: 0.5em 1em;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+}
+.menu ul {
+  display: flex;
+  justify-content: center;
+}
+.menu li{
+  list-style: none;
+  background: none;
+  /*border: solid 1px rgba(50, 205, 50, 0.4);*/
+  border-radius: 5px;
+  margin: 0 1em 0;
+}
+.menu a {
+  display: block;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: background-color 0.2s, color 0.2s;
+}
+.menu a:active,
+.menu a:hover{
+  background-color: limegreen;
+  border-radius: 03px;
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.site-subtitle,
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+.site-title {
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2.4em; 
+  /*2,4x o tamanho da font definida pelo body*/
+  line-height: 1.2em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.site-subtitle {
+  font-family: 'Nanum Pen Script', cursive;
+  font-style: italic;
+  font-weight: lighter;
+  transform: scale(0.2);
+  opacity: 0;
+  animation: linear 0.4s 3s subtitle-animation forwards;
+}
+
+@keyframes typing {
+  from{
+    width: 0;
   }
-  
-  a {
-    color: teal;
-    text-decoration: none;
+  to{
+    width: 10.5em;
   }
-  a:hover {
-    text-decoration: underline;
+}
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal, typing 2s steps(40) 1s normal both;
+}
+@keyframes blinkCursor {
+  from{
+    border-right-color: rgba(255, 255, 255, 0.75);
   }
-  
-  .site-subtitle,
-  .site-title {
-    color: whitesmoke;
-    text-align: center;
+  to{
+    border-right-color: transparent;
   }
-  .site-subtitle {
-    font-style: italic;
-    font-weight: lighter;
+}
+@keyframes subtitle-animation {
+  100%{
+    transform: scale(1);
+    opacity: 1;
   }
-  
+}
+/*FIM CABEÇALHO*/
+
+/*SECTION*/
+.portfolio {
+  min-height: 100vh;
+  padding-top: calc(1em + 0.7em + 20px + 1.2em);
+  padding-bottom: 1em;
+}
+
+.contato h2,
+.portfolio h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 0 1em 2em;
+}
+
+.portfolio .grid {
+  background-color: rgba(255, 255, 255, 0.15);
+  display: grid;
+  min-height: 100vh;
+  max-width: 100vw;
+  gap: 2em;
+}
+
+@media(min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
+    align-content: center;
+    justify-content: center;
+    padding: 2em;
+  }
+}
+@media(min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 280px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 4em - 73px - 1.3em);
+    /*altura grid - padding section - h2 - margin h2*/
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
+.img-portfolio{
+  border-radius: 3px;
+  height: 200px;
+  width: 200px;
+  margin-top: 15px;
+  object-fit: cover;
+  object-position: bottom;
+  transform: scale(1);
+  transition: 500ms;
+}
+.img-portfolio:hover{
+  transform: scale(1.2);
+}
+
+.contato{
+  min-height: 20vh;
+  margin-bottom: 3em;
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.contato a{
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 1em;
+}
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 1px 1px limegreen;
+}
+
+/*
+section{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+section h2{
+  display: block;
+  top: 0;
+  margin: 0;
+  padding: 50px 100px;
+}
+
+figure{
+  background-color: green;
+  justify-content: space-around;
+  margin: 15px;
+  position: relative;
+  height: 200px;
+}
+figcaption{
+  display: flex;
+  justify-content: center;
+}
+
+*/
+
+/*
+.titulo{
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: linear 2s animacaoTitulo forwards;
+}
+@keyframes animacaoTitulo {
+  100%{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+*/
   
