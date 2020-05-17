@@ -29,8 +29,8 @@
   <section class="sobre container" id="sobre">
     <h2>Sobre</h2>
 
-    <figure>
-      <img src="" alt="">
+    <figure class="profile">
+      <img src="./img/profile.jpg">
     </figure>
 
     <p>
@@ -46,7 +46,7 @@
     </p>
     
     <p>
-      Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> 
+      Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>.
     </p>
 
   </section>
@@ -55,37 +55,90 @@
     <h2>Projetos</h2>
     
     <div class="grid">
-      <figure>
+      
+      <div class="flip-card">
         <figcaption>Calculadora de IMC</figcaption>
         <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/Calculo_de_IMC/index.html" target="blank">
-          <img class="img-portfolio" src="./img/calc_imc.PNG" alt="Calculadora de IMC">
+          <div class="card">          
+            <figure class="card-front">            
+              <img class="img-portfolio" src="./img/calc_imc.PNG" alt="Calculadora de IMC">
+            </figure>
+            <div class="card-back">
+              <div class="text-back-portfolio">
+                <p>Calculadora de IMC com uso de JavaScript para leitura de dados e modificação de tela.</p>
+              </div>
+            </div>
+          </div>
         </a>
-      </figure>
-      <figure>
+      </div>
+      
+      <div class="flip-card">
         <figcaption>Tabuada</figcaption>
         <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/tabuada/index.html" target="blank">
-          <img class="img-portfolio" src="./img/tabuada.PNG" alt="Gerador de tabuada">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/tabuada.PNG" alt="Gerador de tabuada">
+            </figure>
+            <div class="card-back">
+              <div class="text-back-portfolio">
+                <p>A partir da informação de um número pelo usuário, o sistema utiliza multiplicadores de 1 até 100 e apresenta em tela todos os resultados, em forma de lista.</p>
+              </div>
+            </div>
+          </div>
         </a>
-      </figure>
-      <figure>
+      </div>
+      
+      <div class="flip-card">
         <figcaption>Botões de Like</figcaption>
         <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/Alura-Botao_de_likes/index.html" target="blank">
-          <img class="img-portfolio" src="./img/botao_like.PNG" alt="Botões de like">
+          <div class="card">
+            <figure class="card-front">
+              <img class="img-portfolio" src="./img/botao_like.PNG" alt="Botões de like">
+            
+            </figure>
+            <div class="card-back">
+              <div class="text-back-portfolio">
+                <p>Simulação de funcionamento de botões, com uso de condicionais via JavaScript.</p> 
+              </div>
+            </div>
+          </div>
         </a>
-      </figure>
-      <figure>
-        <figcaption>Sorteador de número</figcaption>
+      </div>
+      
+      <div class="flip-card">
+        <figcaption>Sorteador de número</figcaption>  
         <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/App_Sorteio/index.html" target="blank">
-          <img class="img-portfolio" src="./img/sorteador.PNG" alt="Sorteador de números">
+          <div class="card">      
+            <figure class="card-front">
+                <img class="img-portfolio" src="./img/sorteador.PNG" alt="Sorteador de números">
+            </figure>
+            <div class="card-back">
+              <div class="text-back-portfolio">
+                <p>Solicita ao usuário um número entre 1 e 10 e compara, via JavaScript, com um número obtido de forma randômica, simulando um sorteio. <br>
+                HTML e CSS base fornecidos pela Alura e alterados conforme necessidade.</p>
+              </div>
+            </div>
+          </div>
         </a>
-      </figure>
-      <figure>
+      </div>
+            
+      <div class="flip-card">
         <figcaption>Calculadora de tarifa</figcaption>
         <a href="https://rafaelsilveeira.github.io/Projetos-de-Aprendizagem/App_calculo_de_tarifa/index.html" target="blank">
-          <img class="img-portfolio" src="./img/tarifa_app.PNG" alt="Calculadora de tarifa - app de mobilidade">
+          <div class="card">            
+            <figure class="card-front">
+                <img class="img-portfolio" src="./img/tarifa_app.PNG" alt="Calculadora de tarifa - app de mobilidade">
+            </figure>
+            <div class="card-back">
+              <div class="text-back-portfolio">
+                <p>Simula a tarifa de uma viagem em serviço de carro de aplicativo. Usuário informa a distância e o tempo e, com isso, é calculado e apresentado em tela o valor final, com base em valor de tarifa real. <br>
+                HTML e CSS base fornecidos pela Alura e alterados conforme necessidade.</p>
+              </div>
+            </div>
+          </div>
         </a>
-      </figure>
-    </div>
+      </div>
+    </div><!--fim grid-->
   </section>
 
   <section class="contato container" id="contato">
