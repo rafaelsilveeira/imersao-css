@@ -217,6 +217,7 @@ header{
   perspective: 350px;
   text-align: center;
 }
+.flip-card:active .card
 .flip-card:hover .card {
   transform: rotateY(180deg);
 }
