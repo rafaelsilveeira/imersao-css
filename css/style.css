@@ -181,7 +181,7 @@ header{
   display: grid;
   width: 100%;
   gap: 2em;
-  min-height: 150em;
+  min-height: 90em;
   align-items: center;
   
 }
@@ -213,9 +213,9 @@ header{
 
 .img-portfolio{
   border-radius: 5px;
-  height: 15em;
+  height: 10em;
   margin-top: 15px;
-  width: 15em;
+  width: 10em;
   object-fit: cover;
   object-position: bottom;
   /*transform: scale(1);
