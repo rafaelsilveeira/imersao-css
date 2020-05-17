@@ -186,40 +186,10 @@ header{
   
 }
 
-@media(min-width: 560px){
-  .portfolio .grid{
-    grid-template-columns: 240px 240px;
-    /*align-content: center;
-    justify-content: center;*/
-    padding: 2em;
-    min-height: 60em;
-  }
-}
-@media(min-width: 880px){
-  .portfolio .grid{
-    grid-template-columns: repeat(3, 280px);
-    align-content: center;
-    justify-content: center;
-    min-height: 36em;
-  }
-}
-
-@media (min-width: 1280px){
-  .container {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .flip-card {
   height: 12em;
   perspective: 350px;
   text-align: center;
-}
-.flip-card:active .card
-.flip-card:hover .card {
-  transform: rotateY(180deg);
 }
 
 .card {
@@ -238,7 +208,7 @@ header{
 }
 
 .card-back {
-  transform: rotateY(180deg);
+  display: none;
 }
 
 .img-portfolio{
@@ -269,6 +239,38 @@ header{
 }
 
 
+@media(min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
+    /*align-content: center;
+    justify-content: center;*/
+    padding: 2em;
+    min-height: 60em;
+  }
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+  .card-back {
+    display: block;
+    transform: rotateY(180deg);
+  }
+}
+@media(min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 280px);
+    align-content: center;
+    justify-content: center;
+    min-height: 36em;
+  }
+}
+
+@media (min-width: 1280px){
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 
 /*
