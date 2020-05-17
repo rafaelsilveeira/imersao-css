@@ -296,10 +296,10 @@ header{
   color: whitesmoke;
   display: inline-block;
   font-size: 1em;
+  text-decoration: none;
 }
 .contato a:active,
 .contato a:hover{
-  text-decoration: none;
   text-shadow: 1px 1px limegreen;
 }
 
