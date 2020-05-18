@@ -183,7 +183,7 @@ header{
 
 .sobre .profile img {
   clip-path: polygon(20% 0, 100% 0, 80% 95%, 0% 95%);
-  max-width: 150px;
+  max-width: 140px;
 }
 
 .portfolio .grid {
